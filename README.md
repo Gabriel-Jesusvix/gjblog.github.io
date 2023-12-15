@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Git hub Issues Challenge
+  - The project consists of developing an application that will use the GitHub API to fetch items from a repository, data from your profile and display them as a blog.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Challenges 
 
-Currently, two official plugins are available:
+- Listing of your profile with image, number of followers, name and other information available via the GitHub API.
+- List and filter all repository edits with a small summary of their contents
+- Create a page to display a complete post (issue)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Techs
+ - ViteJS
+ - Styled Components
+ - Git Hub Api
+ - React Hooks
+ - Contenxt API
+ - Axios
+  
+## Run Project
 
-## Expanding the ESLint configuration
+ ```bash
+  git clone this repository 
+   cd repository
+   npm i or yarn 
+   npm run dev
+   npm run test
+ ```
+ <br />
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ScreenShots / Movie
 
-- Configure the top-level `parserOptions` property like this:
+![Github blog]![image](https://github.com/Gabriel-Jesusvix/gjblog.github.io/assets/62946928/4524904d-e2ea-41b6-83fd-13ceae4ad50b)
+![image](https://github.com/Gabriel-Jesusvix/gjblog.github.io/assets/62946928/08e33f2c-2a47-40a4-8538-f4c55d7da365)
+![image](https://github.com/Gabriel-Jesusvix/gjblog.github.io/assets/62946928/94905387-eca7-459b-94e2-c4be1a3840a1)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
